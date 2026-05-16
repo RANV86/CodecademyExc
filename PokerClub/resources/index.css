@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #121126;
+}
+
+body,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.header {
+    display: flex;
+    background-color: #121126;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.buttons {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log,
+.sig {
+    background-color: #F24738;
+    border: none;
+    border-radius: 50px;
+    color: ghostwhite;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.log:hover,
+.sig:hover {
+    opacity: 0.7;
+}
+
+.welcome {
+    background-image: url("images/SL-112920-38420-19.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.welcome h1 {
+    margin: 10px 0;
+    -webkit-text-stroke: 2px #F24738;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: 900;
+    font-size: 6rem;
+
+}
+
+.welcome p {
+    margin:10px 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: ghostwhite;
+}
+
+.tournaments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tournaments h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: transparent;
+}
+
+.tournaments > div {
+    flex: 1 1 300px;
+    max-width: 360px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tournaments img {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tournaments img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121126;
+    color: ghostwhite;
+}
+
+@media (max-width: 768px) {
+    .tournaments > div {
+        flex: 1 1 100%; /* Força cada foto a ocupar a largura total no celular */
+    }
+}
