@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header
-
-        <nav>
+    <header>
+        <nav class="navbar">
             <img src="logo.png" alt="Logo" width="50">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,13 +22,18 @@
     </header>
 
     <main>
-        <section>
+        <section class="Home">
             <h1>Welcome to My Portfolio</h1>
             <h6>front End Developer</h6>
             <img src="profile.jpg" alt="Profile Picture" width="150">
         </section>
+        
+        <section class="About">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about myself and my work.</p>
+        </section>
 
-        <section>
+        <section class="Projects">
             <h2>Projects</h2>
             <ul>
                 <li>Project 1: Description of project 1.</li>
@@ -38,7 +45,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="Contact">
             <h2>Contact Me</h2>
             <p>You can reach me at example@email.com</p>
             <p>Or follow me on social media:</p>
@@ -55,5 +62,6 @@
     <footer>
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
